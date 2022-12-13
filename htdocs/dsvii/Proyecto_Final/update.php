@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['usuario'])) {
    @include 'Class/config.php';
-
+   @include 'Class/config_basic.php';
    $id = $_GET['edit'];
    $n = intval($id);
 
